@@ -16,4 +16,4 @@ def predict():
 	labels = model.predict(X, model.clf).tolist()
 	return json.dumps({'predictions': labels})
 
-app.run()
+app.run(host='0.0.0.0')
